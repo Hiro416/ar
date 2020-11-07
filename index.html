@@ -3,14 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>NASA Helios</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </head>
 <body>
-  <div>
-    <a rel="ar" href="nasa_helios.usdz">
-        <img src="nasa_helios.png">
-    </a>
-</div>
+  <model-viewer
+      src="nasa_helios.gltf"
+      ios-src="nasa_helios.usdz"
+      alt="NASA Helios"
+      auto-rotate
+      camera-controls
+      ar
+    ></model-viewer>
 <div align="center"><h2>NASA Helios AR版</h2></div>
-<div align="center"><h2><a helf="https://github.com/Hiro416/ar">ソース公開中<a></h2></div>
+<div align="center"><h2><a href="https://github.com/Hiro416/ar">ソース公開中<a></h2></div>
 </body>
 </html>
